@@ -1,0 +1,51 @@
+/* .display{
+    background-color: #181F32;
+}
+body{
+    background-color: antiquewhite;
+}
+.keypad{
+    background-color: #252D44;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(4,1fr);
+    justify-content: center;
+    
+} */
+body {
+    font-family: Arial, sans-serif;
+}
+
+.display {
+    width: 100%;
+    min-height: 50px; /* adjust height as needed */
+    background-color: #f1f1f1; /* or any color you prefer */
+    border: 1px solid #ccc;
+    text-align: right; /* aligns text to the right */
+    padding: 10px;
+    font-size: 24px; /* adjust font size as needed */
+}
+
+.keypad {
+    display: grid;
+    gap: 10px; /* space between buttons */
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 10px;
+}
+
+.keypad .row {
+    display: contents;
+}
+
+button {
+    width: 100%;
+    padding: 20px;
+    font-size: 18px;
+    border: none;
+    background-color: #e0e0e0;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #d0d0d0;
+}
